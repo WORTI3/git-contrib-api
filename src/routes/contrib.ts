@@ -48,6 +48,8 @@ router.post('/contrib', validateBody, async (req: Request, res: Response) => {
     console.error('Error:', error);
     return res.status(400).json({ error: 'Bad Request', message: 'A valid Github username must be defined'});
   }
+  // latest first
+  contributions.reverse();
 
   let gitlabData: contributions[] = [];
   let githubContribs = 0;
