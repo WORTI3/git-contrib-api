@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "jest",
+    "mocha"
+  ],
+  "env": {
+    "jest": true,
+    "mocha": true
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "indent": ["error", 2]
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ]
+}
